@@ -60,6 +60,7 @@ function agregarTarjeta() {
     const elemento = crearElementoTarjeta(nuevaTarjeta);
     galeria.appendChild(elemento);
 
+    actualizarContador();
 }
 
 // Registrar el evento del botón 
@@ -80,6 +81,58 @@ galeria.addEventListener("click", (e) => {
     const elementoTarjeta = galeria.querySelector(`[data-id="${idEliminar}"]`);
 
     if (elementoTarjeta) elementoTarjeta.remove();
+    actualizarContador();
 });
 
+// Filtros por categoría
+const btnsFiltro = document.querySelectorAll(".btn-filtro");
+
+btnsFiltro.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // Resaltar el botón activo
+        btnsFiltro.forEach(b => b.classList.remove("activo"));
+        btn.classList.add("activo");
+
+        const categoriaFiltro = btn.dataset.categoria;
+
+        // Mostrar u ocultar cada tarjeta según la categoría
+        const todasLasTarjetas = galeria.querySelectorAll(".tarjeta");
+        todasLasTarjetas.forEach(tarjeta => {
+            if (categoriaFiltro === "todas") {
+                tarjeta.classList.remove("oculta");
+            } else {
+                const coincide = tarjeta.classList.contains(`categoria-${categoriaFiltro}`);
+                tarjeta.classList.toggle("oculta", !coincide);
+            }
+        });
+        actualizarContador();
+
+    });
+});
+
+
+// Contador del número de tarjetas visibles
+// Actualizar el contador de tarjetas
+function actualizarContador() {
+    const visibles = galeria.querySelectorAll(".tarjeta:not(.oculta)").length;
+    let contador = document.querySelector("#contador");
+    if (!contador) {
+        contador = document.createElement("p");
+        contador.id = "contador";
+        document.querySelector("#filtros").insertAdjacentElement("afterend", contador);
+    }
+
+    contador.textContent = `Mostrando ${visibles} tarjeta(s)`;
+
+    // Mensaje de galería vacía
+    const sinTarjetas = galeria.querySelectorAll(".tarjeta").length === 0;
+    galeria.innerHTML = sinTarjetas ? `<p class="mensaje-vacio">No hay tarjetas. Crea la primera usando el formulario.</p>` : galeria.innerHTML;
+
+    if (sinTarjetas) {
+        const msgVacio = galeria.querySelector(".mensaje-vacio"); if (msgVacio) msgVacio.remove();
+    }
+}
+
+// Llamar actualizarContador después de agregar o eliminar
+// (integrar en las funciones agregarTarjeta y el listener de galeria)
 
