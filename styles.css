@@ -140,3 +140,13 @@ header h1 {
     color: #777;
     padding: 40px;
 }
+
+#contador{
+text-align:center;
+margin:20px 0;
+font-size:16px;
+font-weight:500;
+color:#a35b5b;
+font-style:italic;
+font-weight: bold;
+}
