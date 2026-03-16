@@ -30,4 +30,11 @@ Este proyecto consiste en una galería interactiva desarrollada con JavaScript p
 4. Abrir `index.html`
 
 ## Capturas
-<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773633419/Captura_de_pantalla_2026-03-15_225514_dggir1.png">
+1. estructura inicial
+<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773635440/Captura_de_pantalla_2026-03-15_232914_kwrwds.png">
+2.crear de tarjetas
+<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773635490/Captura_de_pantalla_2026-03-15_233110_ex9np7.png">
+3. eliminar de tarjetas
+<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773635620/Captura_de_pantalla_2026-03-15_233322_tjixli.png">
+5. contador y filtros 
+<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773635814/Captura_de_pantalla_2026-03-15_233637_h4nvbn.png">
