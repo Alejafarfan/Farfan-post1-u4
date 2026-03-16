@@ -79,8 +79,10 @@ header h1 {
 
 #galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .tarjeta {
@@ -140,13 +142,10 @@ header h1 {
     color: #777;
     padding: 40px;
 }
-
-#contador{
-text-align:center;
-margin:20px 0;
-font-size:16px;
-font-weight:500;
-color:#a35b5b;
-font-style:italic;
-font-weight: bold;
+#contador {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #b44;
+    font-size: 18px;
 }
