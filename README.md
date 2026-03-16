@@ -30,4 +30,4 @@ Este proyecto consiste en una galería interactiva desarrollada con JavaScript p
 4. Abrir `index.html`
 
 ## Capturas
-
+<img width="1919" height="1079" alt="Galeria Interactiva" src="https://res.cloudinary.com/dgq6es9xy/image/upload/v1773633419/Captura_de_pantalla_2026-03-15_225514_dggir1.png">
