@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #90b4bd, #84a5b97a);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#controles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+#controles input,
+#controles select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    min-width: 180px;
+}
+
+#btn-agregar {
+    background: #a33535;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-agregar:hover {
+    background: #365fe0;
+}
+
+#filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn-filtro {
+    color: #ffffff;
+    background: #b94747;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filtro:hover {
+    background: #bbb;
+}
+
+.btn-filtro.activo {
+    background: #4f7cff;
+    color: white;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
