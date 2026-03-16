@@ -83,4 +83,60 @@ header h1 {
     gap: 20px;
 }
 
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 14px;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #4f7cff;
+    color: white;
+}
+
+.btn-eliminar {
+    margin-top: 12px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+    background: #d93636;
+}
+
+.oculta {
+    display: none;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 40px;
+}
